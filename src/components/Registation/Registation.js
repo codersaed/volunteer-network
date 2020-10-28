@@ -7,7 +7,7 @@ import logo from '../../logos/Group 1329.png';
 const Registation = () => {
     const handleReg = () => {
         const newReg = { ...loggedInUser }
-        fetch('http://localhost:5000/addReg', {
+        fetch('https://volunteer-network-server23.herokuapp.com/addReg', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(newReg)
